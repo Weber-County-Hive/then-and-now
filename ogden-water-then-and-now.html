@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ogden’s Water, Then and Now — Then and Now</title>
+<meta name="description" content="From a well in 1889 to a reservoir built over the wells to a $100 million pipe: where Ogden’s drinking water comes from.">
+<meta property="og:title" content="Ogden’s Water, Then and Now — Then and Now">
+<meta property="og:description" content="From a well in 1889 to a reservoir built over the wells to a $100 million pipe: where Ogden’s drinking water comes from.">
+<link rel="icon" type="image/png" href="hive-bee.png">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+.hb-bar{background:#0d0b0a;border-bottom:1px solid #3a2f1c;padding:10px 20px;}
+.hb-bar a{display:flex;align-items:center;gap:12px;max-width:1100px;margin:0 auto;text-decoration:none;}
+.hb-bar img{width:52px;height:52px;border-radius:4px;display:block;flex:none;}
+.hb-name{font-family:'Cinzel','Trajan Pro',Georgia,serif;color:#d4af37;font-size:16px;letter-spacing:.14em;text-transform:uppercase;line-height:1.2;display:block;}
+.hb-sub{font-family:Georgia,serif;font-style:italic;color:#b8956a;font-size:12.5px;letter-spacing:.02em;display:block;margin-top:2px;}
+.hb-foot{background:#0d0b0a;color:#b8956a;text-align:center;padding:26px 20px 30px;font-family:Georgia,serif;}
+.hb-foot img{width:52px;height:52px;display:block;margin:0 auto 10px;}
+.hb-foot .hb-name{font-size:14px;}
+.hb-foot .hb-tag{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a7650;margin-top:8px;display:block;}
+@media(max-width:600px){.hb-bar{padding:8px 16px}.hb-bar img{width:38px;height:38px}.hb-name{font-size:13px}.hb-sub{font-size:11.5px}}
+
+:root{--black:#fbf6ea;--panel:#ffffff;--line:#e3d5b0;--gold:#d4af37;--gold2:#6b4f00;--cream:#221a12;--cream2:#5c4f3c}
+*{box-sizing:border-box}html{font-size:112.5%;scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--cream);font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+a{color:var(--gold2);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:#000}
+h1,h2,h3{font-family:'Cinzel',Georgia,serif;color:var(--gold2);font-weight:600;letter-spacing:.02em}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+.hero{position:relative;overflow:hidden;border-bottom:2px solid var(--gold);background:radial-gradient(ellipse at 70% 30%,rgba(212,175,55,.32),transparent 60%),var(--black)}
+.hero .wrap{display:flex;gap:30px;align-items:center;padding-top:40px;padding-bottom:40px}
+.hero h1{font-size:2.6rem;line-height:1.1;margin:6px 0 12px}
+.kick{font-family:Arial,sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.dek{font-size:1.15rem;color:var(--cream);max-width:34ch}
+.dates{font-family:Arial,sans-serif;font-size:.8rem;color:var(--cream2);margin-top:12px}
+.hivebox{flex:0 0 300px;height:300px;position:relative}
+.hivebox svg.skep{position:absolute;left:50%;top:52%;width:170px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 18px rgba(212,175,55,.45));animation:hum 2.4s ease-in-out infinite}
+@keyframes hum{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-51.5%) scale(1.025)}}
+.orbit{position:absolute;left:50%;top:50%;width:0;height:0;animation:spin linear infinite}
+.orbit .bee{position:absolute;left:var(--r);width:34px;height:34px;margin:-17px 0 0 -17px;animation:swoop 2.6s ease-in-out infinite alternate}
+.bee .face{display:block;position:relative;width:100%;height:100%;transform:rotate(90deg)}
+.orbit.rev .bee .face{transform:rotate(-90deg) scaleY(-1)}
+.bee svg{width:100%;height:100%;animation:jit .16s steps(2) infinite}
+.bee .w{transform-origin:12px 10px;filter:blur(.5px);animation:flap .07s ease-in-out infinite alternate}
+.bee .trail{position:absolute;right:88%;top:52%;width:30px;border-top:3px dotted var(--gold2);opacity:.45}
+@keyframes swoop{from{left:calc(var(--r) - 16px)}to{left:calc(var(--r) + 16px)}}
+@keyframes jit{0%{transform:translate(0,0) rotate(0)}25%{transform:translate(1.5px,-1.5px) rotate(4deg)}50%{transform:translate(-1.5px,1px) rotate(-3deg)}75%{transform:translate(1px,1.5px) rotate(3deg)}100%{transform:translate(-1px,-1px) rotate(-4deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes wob{to{transform:translateY(-3px)}}
+@keyframes flap{from{transform:scaleY(1);opacity:1}to{transform:scaleY(.15);opacity:.55}}
+.buzz{position:absolute;font-family:'Cinzel',serif;color:var(--gold2);opacity:0;font-size:1rem;font-weight:600;animation:buzz 4s ease-in-out infinite}
+@keyframes buzz{0%{opacity:0;transform:translateY(8px)}30%{opacity:.9}70%{opacity:.6}100%{opacity:0;transform:translateY(-22px)}}
+.comb{position:absolute;inset:0;opacity:.22;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='48' viewBox='0 0 56 48'%3E%3Cpath d='M14 1l13 7.5v15L14 31 1 23.5v-15zM42 17l13 7.5v15L42 47 29 39.5v-15z' fill='none' stroke='%23d4af37' stroke-width='1.5'/%3E%3C/svg%3E")}
+@media (prefers-reduced-motion:reduce){.orbit,.orbit .bee,.bee svg,.bee .w,.buzz,.hivebox svg.skep{animation:none!important}}
+@media(max-width:700px){.hero .wrap{flex-direction:column-reverse;align-items:flex-start}.hivebox{flex:0 0 220px;height:220px;width:100%}.hivebox svg.skep{width:130px}.hero h1{font-size:2rem}}
+main{padding:34px 0 60px}
+section{margin:0 0 44px}
+h2.sec{font-size:1.45rem;border-bottom:1px solid var(--gold);padding-bottom:8px;margin:0 0 16px}
+p{max-width:68ch}
+.short{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--gold);padding:18px 22px;margin:0 0 28px}
+.short h2{font-size:1.15rem;margin:0 0 10px}
+.short li{margin-bottom:8px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+.toc a{font-family:Arial,sans-serif;font-size:.8rem;padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:var(--cream);text-decoration:none;background:var(--panel)}
+.toc a:hover{border-color:var(--gold)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.fact{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--gold);padding:16px;text-align:center}
+.fact .n{font-family:'Cinzel',serif;color:var(--gold2);font-size:1.7rem;font-weight:600}
+.fact .l{font-family:Arial,sans-serif;font-size:.8rem;color:var(--cream2)}
+@media(max-width:640px){.facts{grid-template-columns:1fr}}
+blockquote{border-left:4px solid var(--gold);margin:20px 0;padding:6px 18px;font-style:italic;font-size:1.1rem}
+blockquote cite{display:block;font-style:normal;font-family:Arial,sans-serif;font-size:.8rem;color:var(--cream2);margin-top:6px}
+.tl{list-style:none;margin:0;padding:0;border-left:3px solid var(--gold)}
+.tl li{position:relative;padding:0 0 18px 24px}
+.tl li::before{content:"";position:absolute;left:-10px;top:5px;width:16px;height:16px;background:var(--black);border:3px solid var(--gold);transform:rotate(30deg);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
+.tl b{display:block;font-family:'Cinzel',serif;color:var(--gold2)}
+.panel{background:var(--panel);border:1px solid var(--line);padding:16px 18px;margin:0 0 22px}
+.panel h3{margin:0 0 4px;font-size:1.05rem}
+.panel .sub{font-family:Arial,sans-serif;font-size:.8rem;color:var(--cream2);margin:0 0 12px}
+.hs-bars{display:grid;grid-template-columns:minmax(110px,34%) 1fr;gap:10px 12px;align-items:center;font-family:Arial,sans-serif;font-size:.95rem}
+.hs-bars .lab{text-align:right}.hs-bars .tr{display:flex;align-items:center}
+.hs-bars .fl{height:26px;background:var(--gold);border-radius:0 4px 4px 0;flex-shrink:0}
+.hs-bars .v{margin-left:8px;font-weight:bold;color:var(--gold2)}
+.hs-flips{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.hs-flip{text-align:left;background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--gold);padding:14px 16px;cursor:pointer;font:inherit;color:var(--cream);min-height:92px}
+.hs-flip .ft{font-weight:bold;color:var(--gold2)}.hs-flip .fh{font-family:Arial,sans-serif;font-size:.75rem;color:var(--cream2);margin-top:6px}
+.hs-flip .fd{display:none;margin-top:8px;font-size:.95rem}.hs-flip[aria-expanded="true"] .fd{display:block}.hs-flip[aria-expanded="true"] .fh{display:none}
+.hs-qa{display:grid;gap:10px}.hs-qa div{background:var(--panel);border-left:4px solid var(--gold);padding:12px 16px}
+.hs-qa b{display:block;font-family:Arial,sans-serif;font-size:.85rem;color:var(--gold2);margin-bottom:4px}
+.hs-counter{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.hs-counter>div{background:var(--panel);border:1px solid var(--gold);padding:14px;text-align:center}
+.hs-counter .n{font-family:'Cinzel',serif;font-size:1.7rem;color:var(--gold2)}.hs-counter .l{font-size:.8rem;color:var(--cream2)}
+.hs-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.hs-cards a{display:block;background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--gold);padding:16px 18px;text-decoration:none;color:var(--cream);transition:transform .15s,border-color .15s}
+.hs-cards a:hover{transform:translateY(-3px);border-color:var(--gold)}
+.hs-cards a b{display:block;font-family:'Cinzel',serif;color:var(--gold2);margin-bottom:6px}
+.hs-cards a span{font-size:.9rem;color:var(--cream2)}
+.tag{display:inline-block;font-family:Arial,sans-serif;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--gold);color:var(--gold2);padding:2px 7px;margin-bottom:8px}
+details.src{border-top:1px solid var(--gold);padding-top:10px}
+details.src summary{cursor:pointer;font-family:'Cinzel',serif;color:var(--gold2)}
+details.src li{margin-bottom:8px;font-size:.92rem}
+.note{font-family:Arial,sans-serif;font-size:.85rem;color:var(--cream2)}
+.ask{background:var(--panel);border:1px dashed var(--gold);padding:16px 18px}
+footer.site{border-top:2px solid var(--gold);padding:28px 0;font-family:Arial,sans-serif;font-size:.85rem;color:var(--cream2)}
+</style>
+</head>
+<body>
+<div class="hb-bar"><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener"><img src="uhp-badge.png" alt="Utah Hive Politics logo"><span><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span></span></a></div>
+<header class="hero"><div class="wrap">
+<div><div class="kick"><a href="index.html" style="color:var(--gold2)">← Then and Now</a> · Weber County · Ogden</div>
+<h1>Ogden’s Water, Then and Now</h1>
+<p class="dek">From a single well in 1889 to a reservoir built right over the wells to a $100 million pipe being laid now, here’s where Ogden’s drinking water has come from.</p>
+<div class="dates">Posted Oct. 18, 2026 · Updated Oct. 18, 2026</div></div>
+<div class="hivebox" aria-hidden="true"><div class="comb"></div><svg class="skep" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 8c-8 0-12 6-12 10h24c0-4-4-10-12-10z" fill="#d4af37"/><rect x="43.0" y="16" width="34" height="13" rx="6.5" fill="#e7c45a" stroke="#0d0b0a" stroke-width="1.5"/><rect x="33.0" y="28" width="54" height="13" rx="6.5" fill="#d4af37" stroke="#0d0b0a" stroke-width="1.5"/><rect x="25.0" y="40" width="70" height="13" rx="6.5" fill="#e7c45a" stroke="#0d0b0a" stroke-width="1.5"/><rect x="19.0" y="52" width="82" height="13" rx="6.5" fill="#d4af37" stroke="#0d0b0a" stroke-width="1.5"/><rect x="15.0" y="64" width="90" height="13" rx="6.5" fill="#e7c45a" stroke="#0d0b0a" stroke-width="1.5"/><rect x="13.0" y="76" width="94" height="13" rx="6.5" fill="#d4af37" stroke="#0d0b0a" stroke-width="1.5"/><rect x="13.0" y="88" width="94" height="13" rx="6.5" fill="#c79f2c" stroke="#0d0b0a" stroke-width="1.5"/><path d="M50 101a10 10 0 0 1 20 0z" fill="#0d0b0a"/><rect x="20" y="100" width="80" height="6" rx="3" fill="#8a6d1e"/></svg><div class="orbit" style="animation-duration:7s;animation-delay:0s;"><div class="bee" style="--r:95px;animation-delay:0.0s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit rev" style="animation-duration:11s;animation-delay:-3s; animation-direction:reverse;"><div class="bee" style="--r:120px;animation-delay:-1.5s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit" style="animation-duration:6s;animation-delay:-1.5s;"><div class="bee" style="--r:78px;animation-delay:-0.75s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit rev" style="animation-duration:15s;animation-delay:-7s; animation-direction:reverse;"><div class="bee" style="--r:135px;animation-delay:-3.5s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit" style="animation-duration:9s;animation-delay:-4.5s;"><div class="bee" style="--r:105px;animation-delay:-2.25s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit rev" style="animation-duration:13s;animation-delay:-9s; animation-direction:reverse;"><div class="bee" style="--r:88px;animation-delay:-4.5s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><span class="buzz" style="left:14%;top:22%;animation-delay:0s">bzz</span><span class="buzz" style="left:72%;top:12%;animation-delay:1.3s">bzz</span><span class="buzz" style="left:80%;top:70%;animation-delay:2.6s">bzz</span><span class="buzz" style="left:8%;top:66%;animation-delay:3.4s">bzz</span></div>
+</div></header>
+<main><div class="wrap">
+<section class="short" id="short"><h2>The short version</h2><ul><li>As Ogden grew in the early 1900s, it needed more clean water. The city turned to <strong>artesian wells</strong> in the Ogden Valley, at a place that became known as <strong>Artesian Park</strong>.</li><li>About <strong>50 wells</strong> were dug from around 1914 into the 1930s. By 1933 they supplied about <strong>40,000</strong> Ogden residents.</li><li>The federal government built <strong>Pineview Dam</strong> from 1934 to 1937. Instead of giving up the wells, Ogden had them <strong>capped and piped</strong> under the new reservoir. Pineview was later enlarged to more than twice its first size.</li><li>The canyon pipes are now about 90 years old and leak. Ogden is replacing them in a <strong>$100 million</strong> project, which is why Pineview was lowered in 2026.</li></ul></section>
+<nav class="toc" aria-label="On this page"><a href="#short">The short version</a><a href="#then">Then: Artesian Park</a><a href="#dam">The dam goes in over the wells</a><a href="#later">Bigger dam, new wells</a><a href="#now">Now: replacing the pipes</a><a href="#timeline">Timeline</a><a href="#words">Words to know</a><a href="#ask">Questions to ask</a><a href="#related">Connected Hive work</a><a href="#updates">Updates</a><a href="#sources">Sources</a></nav>
+<div class="facts"><div class="fact"><div class="n">1889</div><div class="l">First artesian well, by one local history</div></div><div class="fact"><div class="n">About 50</div><div class="l">Wells dug at Artesian Park</div></div><div class="fact"><div class="n">$100M</div><div class="l">Pipeline replacement now underway</div></div></div>
+<section id="then"><h2 class="sec">Then: Artesian Park</h2>
+<p>As Ogden grew into a railroad and business center, it needed new sources of clean water. Starting in <strong>1914</strong>, wells were dug near where the forks of the Ogden River meet in the Ogden Valley, Utah Humanities reported. A 1929 typhoid outbreak, blamed on contaminated water from Wheeler Creek, sped up the drilling.</p>
+<p>The wells flowed on their own. Between September 1933 and October 1934, about 11,750 acre-feet of water came from Artesian Park, according to a 1937 Department of the Interior study, and the wells served about 40,000 Ogden residents.</p>
+<p>The park was also a place to visit. A local history from Weber State University describes an ice cream shop where Pineview Dam now stands, and canyon train trips to Artesian Park every 20 minutes for five cents in 1924.</p>
+<p class="note">Sources differ on the details. One local history dates the first well to 1889. The Bureau of Reclamation says the city dug fifty wells between 1915 and 1925. Utah Humanities and a 2019 state study both count 51 wells in all.</p>
+</section>
+<section id="dam"><h2 class="sec">The dam goes in over the wells</h2>
+<p>The Ogden River Project was authorized in 1933. Construction on <strong>Pineview Dam</strong> began on Sept. 29, 1934, with Utah Construction Company of Ogden and Morrison-Knudsen of Boise as contractors and Civilian Conservation Corps crews helping clear the site, according to the Bureau of Reclamation. Storage began in November 1936, and the work was finished in 1937 (the dam’s top wall was completed in 1939).</p>
+<p>Ogden did not want to give up its well water. So Reclamation connected pipes to the wells below the reservoir floor, and the water flowed through a 9,000-foot pipe to the city main. Weber State University’s library calls it the only known system with artesian wells covered by a reservoir.</p>
+<p>In 1937, Reclamation turned operation of the project over to the <strong>Ogden River Water Users Association</strong>. The reservoir also supplies water for about 25,000 acres of farmland and helps with flood control.</p>
+<div class="panel"><h3>Pineview’s storage, then and now</h3><p class="sub">Bureau of Reclamation, Ogden River Project.</p><div class="hs-bars"><div class="lab">When built, 1937</div><div class="tr" title="When built, 1937: 44,175 acre-feet"><div class="fl" style="width:26.5%"></div><span class="v">44,175 acre-feet</span></div><div class="lab">After enlargement</div><div class="tr" title="After enlargement: 110,150 acre-feet"><div class="fl" style="width:66.0%"></div><span class="v">110,150 acre-feet</span></div></div></div>
+<div class="panel"><h3>Pineview Dam’s height</h3><p class="sub">Bureau of Reclamation, Ogden River Project.</p><div class="hs-bars"><div class="lab">When built, 1937</div><div class="tr" title="When built, 1937: 103 feet tall"><div class="fl" style="width:49.6%"></div><span class="v">103 feet tall</span></div><div class="lab">After enlargement</div><div class="tr" title="After enlargement: 137 feet tall"><div class="fl" style="width:66.0%"></div><span class="v">137 feet tall</span></div></div></div>
+</section>
+<section id="later"><h2 class="sec">Bigger dam, new wells</h2>
+<p>As part of the later Weber Basin Project, Pineview Dam was raised from 103 to 137 feet, and its storage grew from 44,175 to 110,150 acre-feet, the Bureau of Reclamation says. Weber State’s library dates the enlargement to about 20 years after the dam was finished.</p>
+<p>Over time, the original artesian wells were capped and abandoned, and the city drilled new wells that flow to its treatment plant, according to Reclamation. Utah Humanities says the old submerged wells stopped feeding Ogden in 1956; another local history says six new, larger wells were dug in 1970. Those new wells, in a well field next to the reservoir, are still in use. The Ogden Valley News reports the well field supplies more than half of Ogden City’s water.</p>
+</section>
+<section id="now"><h2 class="sec">Now: replacing the pipes</h2>
+<p>The pipes that carry the well water down Ogden Canyon were laid in the 1930s; the original 36-inch and 24-inch lines carry about two-thirds of Ogden’s drinking water, the Standard-Examiner reported in November 2025. The city replaced the 24-inch pipe in 2014. Leak tests found large leaks, and the old line loses about 1 million gallons a day, The Salt Lake Tribune reported.</p>
+<blockquote>“Once a pipe hits 80 years to 90 years old, it is due to fail.”<cite>Justin Anderson, executive director of Ogden City Public Services, to the Standard-Examiner (Nov. 2025)</cite></blockquote>
+<p>The replacement project is about <strong>$100 million</strong>, paid for with federal EPA loans, the state Drinking Water Revolving Fund and other grants, the Tribune reported. A new 48-inch pipe is going in under the reservoir, which is why Pineview was lowered in 2026; work there must be done by January so the reservoir can refill. The pipeline serves about 120,000 water users.</p>
+<p class="note">Reports differ on some numbers. The Tribune describes 6.4 miles of pipe, a 55-year-old line under the reservoir and a 100-year-old canyon pipe; the Standard-Examiner describes just under eight miles from the well field to the 23rd Street reservoir, with the canyon line laid in the 1930s and completion slated for 2028. The Tribune describes Weber Basin Water Conservancy District as operating Pineview Dam; the Bureau of Reclamation lists the Ogden River Water Users Association as the project’s operator.</p>
+<p>Read what the drawdown uncovered: <a href="pineview-artesian-park.html">The Wells Under Pineview</a>.</p>
+</section>
+
+<section id="timeline"><h2 class="sec">Timeline</h2>
+<ul class="tl"><li><b>1889</b>First artesian well in the area, by one local history.</li><li><b>1914</b>Ogden begins digging wells at what becomes Artesian Park.</li><li><b>1924</b>Canyon trains run to Artesian Park every 20 minutes for five cents.</li><li><b>1929</b>A typhoid outbreak speeds up well drilling.</li><li><b>1933</b>The Ogden River Project is authorized; the wells serve about 40,000 people.</li><li><b>Sept. 29, 1934</b>Construction of Pineview Dam begins.</li><li><b>1937</b>The dam and canals are finished; operation is handed to the Ogden River Water Users Association. The wells are piped under the reservoir.</li><li><b>Mid-1950s</b>Pineview is enlarged to 110,150 acre-feet.</li><li><b>1970</b>Six new, larger wells are dug, by one local history.</li><li><b>1992</b>An earlier pipeline repair lowers the reservoir, KUER reported.</li><li><b>2014</b>Ogden replaces the 24-inch canyon pipe.</li><li><b>2025</b>Work begins on replacing the 36-inch line.</li><li><b>2026</b>Pineview is lowered about 50 feet so the line under the reservoir can be replaced.</li></ul></section>
+<section id="words"><h2 class="sec">Words to know</h2><p class="note">Tap a card to see what it means.</p>
+<div class="hs-flips"><button class="hs-flip" aria-expanded="false"><div class="ft">Artesian well</div><div class="fh">Tap to see</div><div class="fd">A well where underground water is under pressure, so it flows up without a pump.</div></button><button class="hs-flip" aria-expanded="false"><div class="ft">Culinary water</div><div class="fh">Tap to see</div><div class="fd">Water treated for drinking and cooking.</div></button><button class="hs-flip" aria-expanded="false"><div class="ft">Acre-foot</div><div class="fh">Tap to see</div><div class="fd">Enough water to cover one acre one foot deep, about 326,000 gallons.</div></button><button class="hs-flip" aria-expanded="false"><div class="ft">Well field</div><div class="fh">Tap to see</div><div class="fd">A group of wells that together supply a water system.</div></button><button class="hs-flip" aria-expanded="false"><div class="ft">Water users association</div><div class="fh">Tap to see</div><div class="fd">A group of water rights holders that runs a shared water project.</div></button></div>
+</section>
+<section id="ask"><h2 class="sec">Questions to ask, and whom to ask</h2>
+<div class="hs-qa"><div><b>Ogden City Public Services</b>How much of the city’s water comes from the Ogden Valley well field today, and how will the new pipe change leaks?</div><div><b>Weber Basin Water Conservancy District</b>Who operates Pineview Dam day to day, and who decides drawdowns?</div><div><b>Utah Geological Survey</b>Are any of the old Artesian Park wells still flowing, and do they need to be capped?</div></div>
+</section>
+<section id="related"><h2 class="sec">Connected Hive work</h2>
+<div class="hs-cards"><a href="pineview-artesian-park.html"><b>The Wells Under Pineview</b><span>Then and Now: what the 2026 drawdown uncovered</span></a><a href="https://weber-county-hive.github.io/Utah-hive-news-spotlights/pineview-history-surfaces.html"><b>The Pineview spotlight</b><span>News Spotlights</span></a><a href="https://weber-county-hive.github.io/Great-Salt-Lake/weber-gsl-outflows-by-user.html"><b>Who’s Actually Using the Water?</b><span>Great Salt Lake</span></a><a href="https://weber-county-hive.github.io/Transparency/weber-hive-powder-mountain-water.html"><b>Wells at the Top</b><span>Transparency: Powder Mountain’s water</span></a></div>
+</section>
+<section><h2 class="sec">Behind this piece</h2>
+<div class="hs-counter"><div><div class="n">8</div><div class="l">Sources read</div></div><div><div class="n">3</div><div class="l">Places where sources disagree, shown</div></div><div><div class="n">13</div><div class="l">Dated timeline entries</div></div></div>
+</section>
+<section id="updates"><h2 class="sec">Updates</h2>
+<ul class="tl"><li><b>Oct. 18, 2026</b>Page posted. We’ll add the pipeline finish and the reservoir refill here, with dates.</li></ul>
+<div class="ask" style="margin-top:14px"><strong>Know something we should add?</strong> Email <a href="mailto:webercountyhive@gmail.com?subject=Then%20and%20Now">webercountyhive@gmail.com</a>. Corrections are dated and shown here.</div>
+</section>
+<section id="sources"><details class="src"><summary>Sources</summary><ol><li><a href="https://www.usbr.gov/projects/index.php?id=371">U.S. Bureau of Reclamation, Ogden River Project (project history, Pineview Dam)</a></li><li><a href="https://exhibits.weber.edu/s/SC50/page/Pineview">Weber State University Stewart Library, “Pineview Dam, 1934” exhibit</a></li><li><a href="https://stories.utahhumanities.org/item/1193">Utah Humanities Beehive Archive (Nicholas Demas), “Artesian Park,” 2008</a></li><li><a href="https://www.intermountainhistories.org/items/show/670">Intermountain Histories (Houston Crudele, Weber State University), Artesian Park</a></li><li><a href="https://www.standard.net/news/local/2025/nov/22/through-the-years-water-pipe-replacement-in-ogden-canyon-ties-past-and-future/">Standard-Examiner (Jared Lloyd), “Through the years: Water pipe replacement in Ogden Canyon ties past and future,” Nov. 22, 2025</a></li><li><a href="https://www.sltrib.com/news/environment/2026/06/27/pineview-reservoir-be-drained-amid/">The Salt Lake Tribune (Leia Larsen, with Grist), “Pineview Reservoir to be drained amid dire drought conditions to upgrade water pipeline,” June 27, 2026</a></li><li><a href="https://www.kuer.org/science-environment/2026-06-29/how-fast-pineview-reservoir-refills-after-pipeline-repair-is-up-to-mother-nature">KUER (Macy Lipkin), “How fast Pineview Reservoir refills after pipeline repair is up to Mother Nature,” June 29, 2026</a></li><li><a href="https://www.ogdenvalleynews.com/pineview-drawdown-update.html">The Ogden Valley News, “Pineview Drawdown Update,” Aug. 28, 2026</a></li></ol><p class="note">Public records and published reports only. Where sources disagree, this page says so.</p></details></section>
+</div></main>
+<footer class="site"><div class="wrap">Then and Now · Utah Hive Politics · from the publisher of The Weber County Hive. Public records and published reports only. Every fact links to its source. Have family stories, photos or records about a place in these pages? Email <a href="mailto:webercountyhive@gmail.com">webercountyhive@gmail.com</a>.<br><a href="https://github.com/Weber-County-Hive">All Hive repos</a> · <a href="https://webercountyhive.substack.com">webercountyhive.substack.com</a></div></footer>
+<div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent · Accountability · Journalism</span></div>
+<script data-goatcounter="https://weberhive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>document.querySelectorAll('.hs-flip').forEach(f=>f.addEventListener('click',()=>f.setAttribute('aria-expanded',f.getAttribute('aria-expanded')==='true'?'false':'true')));</script>
+</body>
+</html>

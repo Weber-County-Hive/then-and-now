@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How MIDA Grew — Then and Now</title>
+<meta name="description" content="Created in 2007 to help keep Hill Air Force Base open, MIDA now has eight project areas and a $121.6 million proposed budget.">
+<meta property="og:title" content="How MIDA Grew — Then and Now">
+<meta property="og:description" content="Created in 2007 to help keep Hill Air Force Base open, MIDA now has eight project areas and a $121.6 million proposed budget.">
+<link rel="icon" type="image/png" href="hive-bee.png">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+.hb-bar{background:#0d0b0a;border-bottom:1px solid #3a2f1c;padding:10px 20px;}
+.hb-bar a{display:flex;align-items:center;gap:12px;max-width:1100px;margin:0 auto;text-decoration:none;}
+.hb-bar img{width:52px;height:52px;border-radius:4px;display:block;flex:none;}
+.hb-name{font-family:'Cinzel','Trajan Pro',Georgia,serif;color:#d4af37;font-size:16px;letter-spacing:.14em;text-transform:uppercase;line-height:1.2;display:block;}
+.hb-sub{font-family:Georgia,serif;font-style:italic;color:#b8956a;font-size:12.5px;letter-spacing:.02em;display:block;margin-top:2px;}
+.hb-foot{background:#0d0b0a;color:#b8956a;text-align:center;padding:26px 20px 30px;font-family:Georgia,serif;}
+.hb-foot img{width:52px;height:52px;display:block;margin:0 auto 10px;}
+.hb-foot .hb-name{font-size:14px;}
+.hb-foot .hb-tag{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a7650;margin-top:8px;display:block;}
+@media(max-width:600px){.hb-bar{padding:8px 16px}.hb-bar img{width:38px;height:38px}.hb-name{font-size:13px}.hb-sub{font-size:11.5px}}
+
+:root{--black:#fbf6ea;--panel:#ffffff;--line:#e3d5b0;--gold:#d4af37;--gold2:#6b4f00;--cream:#221a12;--cream2:#5c4f3c}
+*{box-sizing:border-box}html{font-size:112.5%;scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--cream);font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+a{color:var(--gold2);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:#000}
+h1,h2,h3{font-family:'Cinzel',Georgia,serif;color:var(--gold2);font-weight:600;letter-spacing:.02em}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+.hero{position:relative;overflow:hidden;border-bottom:2px solid var(--gold);background:radial-gradient(ellipse at 70% 30%,rgba(212,175,55,.32),transparent 60%),var(--black)}
+.hero .wrap{display:flex;gap:30px;align-items:center;padding-top:40px;padding-bottom:40px}
+.hero h1{font-size:2.6rem;line-height:1.1;margin:6px 0 12px}
+.kick{font-family:Arial,sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.dek{font-size:1.15rem;color:var(--cream);max-width:34ch}
+.dates{font-family:Arial,sans-serif;font-size:.8rem;color:var(--cream2);margin-top:12px}
+.hivebox{flex:0 0 300px;height:300px;position:relative}
+.hivebox svg.skep{position:absolute;left:50%;top:52%;width:170px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 18px rgba(212,175,55,.45));animation:hum 2.4s ease-in-out infinite}
+@keyframes hum{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-51.5%) scale(1.025)}}
+.orbit{position:absolute;left:50%;top:50%;width:0;height:0;animation:spin linear infinite}
+.orbit .bee{position:absolute;left:var(--r);width:34px;height:34px;margin:-17px 0 0 -17px;animation:swoop 2.6s ease-in-out infinite alternate}
+.bee .face{display:block;position:relative;width:100%;height:100%;transform:rotate(90deg)}
+.orbit.rev .bee .face{transform:rotate(-90deg) scaleY(-1)}
+.bee svg{width:100%;height:100%;animation:jit .16s steps(2) infinite}
+.bee .w{transform-origin:12px 10px;filter:blur(.5px);animation:flap .07s ease-in-out infinite alternate}
+.bee .trail{position:absolute;right:88%;top:52%;width:30px;border-top:3px dotted var(--gold2);opacity:.45}
+@keyframes swoop{from{left:calc(var(--r) - 16px)}to{left:calc(var(--r) + 16px)}}
+@keyframes jit{0%{transform:translate(0,0) rotate(0)}25%{transform:translate(1.5px,-1.5px) rotate(4deg)}50%{transform:translate(-1.5px,1px) rotate(-3deg)}75%{transform:translate(1px,1.5px) rotate(3deg)}100%{transform:translate(-1px,-1px) rotate(-4deg)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes wob{to{transform:translateY(-3px)}}
+@keyframes flap{from{transform:scaleY(1);opacity:1}to{transform:scaleY(.15);opacity:.55}}
+.buzz{position:absolute;font-family:'Cinzel',serif;color:var(--gold2);opacity:0;font-size:1rem;font-weight:600;animation:buzz 4s ease-in-out infinite}
+@keyframes buzz{0%{opacity:0;transform:translateY(8px)}30%{opacity:.9}70%{opacity:.6}100%{opacity:0;transform:translateY(-22px)}}
+.comb{position:absolute;inset:0;opacity:.22;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='48' viewBox='0 0 56 48'%3E%3Cpath d='M14 1l13 7.5v15L14 31 1 23.5v-15zM42 17l13 7.5v15L42 47 29 39.5v-15z' fill='none' stroke='%23d4af37' stroke-width='1.5'/%3E%3C/svg%3E")}
+@media (prefers-reduced-motion:reduce){.orbit,.orbit .bee,.bee svg,.bee .w,.buzz,.hivebox svg.skep{animation:none!important}}
+@media(max-width:700px){.hero .wrap{flex-direction:column-reverse;align-items:flex-start}.hivebox{flex:0 0 220px;height:220px;width:100%}.hivebox svg.skep{width:130px}.hero h1{font-size:2rem}}
+main{padding:34px 0 60px}
+section{margin:0 0 44px}
+h2.sec{font-size:1.45rem;border-bottom:1px solid var(--gold);padding-bottom:8px;margin:0 0 16px}
+p{max-width:68ch}
+.short{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--gold);padding:18px 22px;margin:0 0 28px}
+.short h2{font-size:1.15rem;margin:0 0 10px}
+.short li{margin-bottom:8px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+.toc a{font-family:Arial,sans-serif;font-size:.8rem;padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:var(--cream);text-decoration:none;background:var(--panel)}
+.toc a:hover{border-color:var(--gold)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.fact{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--gold);padding:16px;text-align:center}
+.fact .n{font-family:'Cinzel',serif;color:var(--gold2);font-size:1.7rem;font-weight:600}
+.fact .l{font-family:Arial,sans-serif;font-size:.8rem;color:var(--cream2)}
+@media(max-width:640px){.facts{grid-template-columns:1fr}}
+blockquote{border-left:4px solid var(--gold);margin:20px 0;padding:6px 18px;font-style:italic;font-size:1.1rem}
+blockquote cite{display:block;font-style:normal;font-family:Arial,sans-serif;font-size:.8rem;color:var(--cream2);margin-top:6px}
+.tl{list-style:none;margin:0;padding:0;border-left:3px solid var(--gold)}
+.tl li{position:relative;padding:0 0 18px 24px}
+.tl li::before{content:"";position:absolute;left:-10px;top:5px;width:16px;height:16px;background:var(--black);border:3px solid var(--gold);transform:rotate(30deg);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
+.tl b{display:block;font-family:'Cinzel',serif;color:var(--gold2)}
+.panel{background:var(--panel);border:1px solid var(--line);padding:16px 18px;margin:0 0 22px}
+.panel h3{margin:0 0 4px;font-size:1.05rem}
+.panel .sub{font-family:Arial,sans-serif;font-size:.8rem;color:var(--cream2);margin:0 0 12px}
+.hs-bars{display:grid;grid-template-columns:minmax(110px,34%) 1fr;gap:10px 12px;align-items:center;font-family:Arial,sans-serif;font-size:.95rem}
+.hs-bars .lab{text-align:right}.hs-bars .tr{display:flex;align-items:center}
+.hs-bars .fl{height:26px;background:var(--gold);border-radius:0 4px 4px 0;flex-shrink:0}
+.hs-bars .v{margin-left:8px;font-weight:bold;color:var(--gold2)}
+.hs-flips{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.hs-flip{text-align:left;background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--gold);padding:14px 16px;cursor:pointer;font:inherit;color:var(--cream);min-height:92px}
+.hs-flip .ft{font-weight:bold;color:var(--gold2)}.hs-flip .fh{font-family:Arial,sans-serif;font-size:.75rem;color:var(--cream2);margin-top:6px}
+.hs-flip .fd{display:none;margin-top:8px;font-size:.95rem}.hs-flip[aria-expanded="true"] .fd{display:block}.hs-flip[aria-expanded="true"] .fh{display:none}
+.hs-qa{display:grid;gap:10px}.hs-qa div{background:var(--panel);border-left:4px solid var(--gold);padding:12px 16px}
+.hs-qa b{display:block;font-family:Arial,sans-serif;font-size:.85rem;color:var(--gold2);margin-bottom:4px}
+.hs-counter{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.hs-counter>div{background:var(--panel);border:1px solid var(--gold);padding:14px;text-align:center}
+.hs-counter .n{font-family:'Cinzel',serif;font-size:1.7rem;color:var(--gold2)}.hs-counter .l{font-size:.8rem;color:var(--cream2)}
+.hs-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.hs-cards a{display:block;background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--gold);padding:16px 18px;text-decoration:none;color:var(--cream);transition:transform .15s,border-color .15s}
+.hs-cards a:hover{transform:translateY(-3px);border-color:var(--gold)}
+.hs-cards a b{display:block;font-family:'Cinzel',serif;color:var(--gold2);margin-bottom:6px}
+.hs-cards a span{font-size:.9rem;color:var(--cream2)}
+.tag{display:inline-block;font-family:Arial,sans-serif;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--gold);color:var(--gold2);padding:2px 7px;margin-bottom:8px}
+details.src{border-top:1px solid var(--gold);padding-top:10px}
+details.src summary{cursor:pointer;font-family:'Cinzel',serif;color:var(--gold2)}
+details.src li{margin-bottom:8px;font-size:.92rem}
+.note{font-family:Arial,sans-serif;font-size:.85rem;color:var(--cream2)}
+.ask{background:var(--panel);border:1px dashed var(--gold);padding:16px 18px}
+footer.site{border-top:2px solid var(--gold);padding:28px 0;font-family:Arial,sans-serif;font-size:.85rem;color:var(--cream2)}
+</style>
+</head>
+<body>
+<div class="hb-bar"><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener"><img src="uhp-badge.png" alt="Utah Hive Politics logo"><span><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span></span></a></div>
+<header class="hero"><div class="wrap">
+<div><div class="kick"><a href="index.html" style="color:var(--gold2)">← Then and Now</a> · Statewide · Military Installation Development Authority</div>
+<h1>How MIDA Grew</h1>
+<p class="dek">The Military Installation Development Authority was created in 2007 to help keep Hill Air Force Base open. Here’s how it went from one site on the base to eight project areas, a hotel and its own taxes.</p>
+<div class="dates">Posted Oct. 18, 2026 · Updated Oct. 18, 2026</div></div>
+<div class="hivebox" aria-hidden="true"><div class="comb"></div><svg class="skep" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 8c-8 0-12 6-12 10h24c0-4-4-10-12-10z" fill="#d4af37"/><rect x="43.0" y="16" width="34" height="13" rx="6.5" fill="#e7c45a" stroke="#0d0b0a" stroke-width="1.5"/><rect x="33.0" y="28" width="54" height="13" rx="6.5" fill="#d4af37" stroke="#0d0b0a" stroke-width="1.5"/><rect x="25.0" y="40" width="70" height="13" rx="6.5" fill="#e7c45a" stroke="#0d0b0a" stroke-width="1.5"/><rect x="19.0" y="52" width="82" height="13" rx="6.5" fill="#d4af37" stroke="#0d0b0a" stroke-width="1.5"/><rect x="15.0" y="64" width="90" height="13" rx="6.5" fill="#e7c45a" stroke="#0d0b0a" stroke-width="1.5"/><rect x="13.0" y="76" width="94" height="13" rx="6.5" fill="#d4af37" stroke="#0d0b0a" stroke-width="1.5"/><rect x="13.0" y="88" width="94" height="13" rx="6.5" fill="#c79f2c" stroke="#0d0b0a" stroke-width="1.5"/><path d="M50 101a10 10 0 0 1 20 0z" fill="#0d0b0a"/><rect x="20" y="100" width="80" height="6" rx="3" fill="#8a6d1e"/></svg><div class="orbit" style="animation-duration:7s;animation-delay:0s;"><div class="bee" style="--r:95px;animation-delay:0.0s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit rev" style="animation-duration:11s;animation-delay:-3s; animation-direction:reverse;"><div class="bee" style="--r:120px;animation-delay:-1.5s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit" style="animation-duration:6s;animation-delay:-1.5s;"><div class="bee" style="--r:78px;animation-delay:-0.75s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit rev" style="animation-duration:15s;animation-delay:-7s; animation-direction:reverse;"><div class="bee" style="--r:135px;animation-delay:-3.5s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit" style="animation-duration:9s;animation-delay:-4.5s;"><div class="bee" style="--r:105px;animation-delay:-2.25s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><div class="orbit rev" style="animation-duration:13s;animation-delay:-9s; animation-direction:reverse;"><div class="bee" style="--r:88px;animation-delay:-4.5s"><span class="face"><span class="trail"></span><svg viewBox="0 0 24 20" aria-hidden="true"><ellipse class="w" cx="9" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".95"/><ellipse class="w" cx="15" cy="6" rx="5" ry="4" fill="#ffffff" stroke="#8a7a50" stroke-width=".6" opacity=".85"/><ellipse cx="12" cy="12" rx="7" ry="5" fill="#d4af37"/><rect x="9" y="7.5" width="2" height="9" fill="#0d0b0a"/><rect x="13" y="7.5" width="2" height="9" fill="#0d0b0a"/><circle cx="19" cy="11" r="2.4" fill="#0d0b0a"/></svg></span></div></div><span class="buzz" style="left:14%;top:22%;animation-delay:0s">bzz</span><span class="buzz" style="left:72%;top:12%;animation-delay:1.3s">bzz</span><span class="buzz" style="left:80%;top:70%;animation-delay:2.6s">bzz</span><span class="buzz" style="left:8%;top:66%;animation-delay:3.4s">bzz</span></div>
+</div></header>
+<main><div class="wrap">
+<section class="short" id="short"><h2>The short version</h2><ul><li><strong>MIDA</strong> grew out of the fight to keep Utah’s bases open during federal base-closure rounds in the 1990s. The Legislature created it in <strong>2007</strong>.</li><li>For about its first ten years, MIDA had two projects: <strong>Falcon Hill</strong>, a business park on Hill Air Force Base land, and a small area at <strong>Deer Valley</strong>, started around 2012 to replace discounted military hotel rooms.</li><li>From <strong>2019 to 2025</strong>, a series of bills, each with Sen. Jerry Stevenson, MIDA’s vice chair, as primary sponsor, added districts that can tax, longer tax increment, and an accommodations tax of up to 15%.</li><li>Today MIDA lists <strong>eight project areas</strong>, owns the hotel space at the <strong>Grand Hyatt Deer Valley</strong>, and has proposed spending <strong>$121.6 million</strong> next year. Transparent Utah says the state auditor does not audit MIDA; a private firm does its yearly audit.</li></ul></section>
+<nav class="toc" aria-label="On this page"><a href="#short">The short version</a><a href="#then">Then: saving the bases</a><a href="#hotel">The Deer Valley hotel</a><a href="#powers">How the powers grew</a><a href="#now">Now: eight project areas</a><a href="#timeline">Timeline</a><a href="#words">Words to know</a><a href="#ask">Questions to ask</a><a href="#related">Connected Hive work</a><a href="#updates">Updates</a><a href="#sources">Sources</a></nav>
+<div class="facts"><div class="fact"><div class="n">2007</div><div class="l">Legislature creates MIDA</div></div><div class="fact"><div class="n">8</div><div class="l">Project areas MIDA lists today</div></div><div class="fact"><div class="n">$121.6M</div><div class="l">MIDA’s proposed budget</div></div></div>
+<section id="then"><h2 class="sec">Then: saving the bases</h2>
+<p>MIDA’s roots go back to the federal Base Realignment and Closure (BRAC) rounds. The 1993 round closed the Tooele Army Depot, and in 1995 Hill Air Force Base and Defense Depot Ogden were under threat, according to Transparent Utah. Local groups formed to protect the bases and later merged into the <strong>Utah Defense Alliance</strong>.</p>
+<p>“The Utah State Legislature passed the bill creating MIDA in 2007,” Transparent Utah says. Its first board had five members, appointed by the governor, the Senate president and the House speaker. Its first executive director was Rick Mayfield, who had led the Utah Defense Alliance; Paul Morris then led MIDA from 2008 until 2026.</p>
+<p>Its first project was <strong>Falcon Hill Aerospace Research Park</strong>, about 525 acres on Hill Air Force Base land, developed with a private partner.</p>
+</section>
+<section id="hotel"><h2 class="sec">The Deer Valley hotel</h2>
+<p>Around 2012, MIDA created a second project area at Deer Valley, about 40 acres, to replace discounted military hotel rooms lost in a land swap for the 2002 Olympics. Over about thirteen years and eight amendments, that area grew to more than 5,000 acres.</p>
+<p>A 2019 law, S.B. 269, says hotels and hotel or commercial condo units that MIDA owns pay no property tax or privilege tax, even when a private company runs them. In 2020 the developer donated the hotel site to MIDA; in 2021 MIDA approved up to $260 million in bonds, including about $115 million for the hotel. The <strong>Grand Hyatt Deer Valley</strong> opened on Nov. 20, 2024. Wasatch County lists the MIDA-owned hotel space at a $0 value. The military benefit today is about 100 discounted hotel rooms.</p>
+<p class="note">Full details and sources: <a href="https://weber-county-hive.github.io/Taxation/utah-grand-hyatt-mida-case.html">the Grand Hyatt case file</a>.</p>
+</section>
+<section id="powers"><h2 class="sec">How the powers grew</h2>
+<p>From 2019 to 2025, a run of bills widened what MIDA could do. Each had the same primary sponsor, Sen. Jerry Stevenson, who has served on MIDA’s board since 2008 and is its vice chair.</p>
+<ul><li><strong>S.B. 228 (2019) and S.B. 179 (2020)</strong> set up public infrastructure districts (PIDs) inside MIDA areas.</li>
+<li><strong>S.B. 192 (2020)</strong> extended tax increment 15 years at Deer Valley.</li>
+<li><strong>S.B. 233 (2021)</strong> gave those districts direct property-tax authority, with exceptions to some conflict-of-interest, open-meetings and records rules.</li>
+<li><strong>S.B. 232 (2022)</strong> followed.</li>
+<li><strong>S.B. 169 (2024)</strong> allowed an accommodations tax of up to 15% inside project areas, with no end date.</li>
+<li><strong>S.B. 316 (2025)</strong> let MIDA review its own environmental impact and spend project money outside the area that raised it.</li></ul>
+<p>One bill went the other way: <strong>S.B. 337 (2025)</strong> would have folded MIDA into a new coordinating agency. It died without a floor vote. Gov. Spencer Cox later said that bill had been his own reform push.</p>
+</section>
+<section id="now"><h2 class="sec">Now: eight project areas</h2>
+<p>MIDA’s website lists eight project areas: Falcon Hill (Davis and Weber), Military Recreation (Deer Valley and Jordanelle, Wasatch), Mountain Veterans Program (Sundance, Utah County), Utah National Guard and Utah Data Center (Camp Williams), Dugway Proving Ground and Tooele Army Depot (Tooele), and Stratos (Box Elder).</p>
+<p>The two newest came four months apart. On Dec. 16, 2025, MIDA adopted the <strong>Tooele Army Depot</strong> plan, 43,228 acres. On April 24, 2026, its board unanimously approved <strong>Stratos</strong>, about 40,000 acres of private land plus 1,279 acres of military and state land, for a data center and energy project in Box Elder County.</p>
+<div class="panel"><h3>Size of MIDA project areas</h3><p class="sub">From MIDA’s project area plans, as compiled in the Hive’s project-area case file.</p><div class="hs-bars"><div class="lab">Falcon Hill (first project)</div><div class="tr" title="Falcon Hill (first project): 525 acres"><div class="fl" style="width:1.0%"></div><span class="v">525 acres</span></div><div class="lab">Deer Valley at the start</div><div class="tr" title="Deer Valley at the start: 40 acres"><div class="fl" style="width:1.0%"></div><span class="v">40 acres</span></div><div class="lab">Deer Valley now</div><div class="tr" title="Deer Valley now: more than 5,000 acres"><div class="fl" style="width:7.6%"></div><span class="v">more than 5,000 acres</span></div><div class="lab">Tooele Army Depot (2025)</div><div class="tr" title="Tooele Army Depot (2025): 43,229 acres"><div class="fl" style="width:66.0%"></div><span class="v">43,229 acres</span></div><div class="lab">Stratos (2026)</div><div class="tr" title="Stratos (2026): 41,279 acres"><div class="fl" style="width:63.0%"></div><span class="v">41,279 acres</span></div></div></div>
+<div class="panel"><h3>MIDA’s budget</h3><p class="sub">MIDA’s own budget filing: fiscal 2025 actual and the proposed budget for the year ahead.</p><div class="hs-bars"><div class="lab">FY2025 actual</div><div class="tr" title="FY2025 actual: $53.2 million"><div class="fl" style="width:28.9%"></div><span class="v">$53.2 million</span></div><div class="lab">FY2027 proposed</div><div class="tr" title="FY2027 proposed: $121.6 million"><div class="fl" style="width:66.0%"></div><span class="v">$121.6 million</span></div></div></div>
+<p>In 2026, MIDA’s board picked Dan Hemmert, a former state senator and former head of the Governor’s Office of Economic Development, as executive director, replacing Paul Morris.</p>
+</section>
+
+<section id="timeline"><h2 class="sec">Timeline</h2>
+<ul class="tl"><li><b>1993</b>A federal base-closure round closes the Tooele Army Depot.</li><li><b>1995</b>Hill Air Force Base and Defense Depot Ogden face closure threats; local groups organize to protect them.</li><li><b>2007</b>The Legislature creates MIDA. Falcon Hill on Hill Air Force Base is its first project.</li><li><b>About 2012</b>A roughly 40-acre project area is created at Deer Valley for military hotel rooms.</li><li><b>2019–2022</b>Bills create public infrastructure districts and give them taxing power.</li><li><b>2020</b>The developer donates the Deer Valley hotel site to MIDA.</li><li><b>2021</b>MIDA approves up to $260 million in bonds, including about $115 million for the hotel.</li><li><b>Dec. 19, 2023</b>MIDA adopts the Sundance project area and passes new taxes there the same day.</li><li><b>2024</b>S.B. 169 allows an accommodations tax of up to 15%.</li><li><b>Nov. 20, 2024</b>The Grand Hyatt Deer Valley opens.</li><li><b>Dec. 16, 2025</b>MIDA adopts the 43,228-acre Tooele Army Depot project area.</li><li><b>April 24, 2026</b>MIDA’s board approves the Stratos project area in Box Elder County.</li><li><b>2026</b>Dan Hemmert replaces Paul Morris as executive director.</li></ul></section>
+<section id="words"><h2 class="sec">Words to know</h2><p class="note">Tap a card to see what it means.</p>
+<div class="hs-flips"><button class="hs-flip" aria-expanded="false"><div class="ft">BRAC</div><div class="fh">Tap to see</div><div class="fd">Base Realignment and Closure, the federal process for closing or shrinking military bases.</div></button><button class="hs-flip" aria-expanded="false"><div class="ft">Project area</div><div class="fh">Tap to see</div><div class="fd">Land where MIDA acts in place of a city or county on development and collects certain taxes.</div></button><button class="hs-flip" aria-expanded="false"><div class="ft">Tax increment</div><div class="fh">Tap to see</div><div class="fd">The growth in property tax after development, kept to pay for projects instead of going to the usual taxing bodies.</div></button><button class="hs-flip" aria-expanded="false"><div class="ft">PID</div><div class="fh">Tap to see</div><div class="fd">Public infrastructure district: a district that can borrow and charge property owners for roads, water and other improvements.</div></button><button class="hs-flip" aria-expanded="false"><div class="ft">Accommodations tax</div><div class="fh">Tap to see</div><div class="fd">A tax on hotel and lodging stays.</div></button></div>
+</section>
+<section id="ask"><h2 class="sec">Questions to ask, and whom to ask</h2>
+<div class="hs-qa"><div><b>Your state legislators</b>Should MIDA be audited by the state auditor? Should its board include people elected by the counties where it works?</div><div><b>MIDA’s board</b>How much of each project area’s money goes to military benefits, and where is that reported?</div><div><b>Your county commission</b>What tax money does the county give up or receive in a MIDA project area?</div></div>
+</section>
+<section id="related"><h2 class="sec">Connected Hive work</h2>
+<div class="hs-cards"><a href="https://weber-county-hive.github.io/committees/weberhivecommitteemidaprojectareas.html"><b>Eight Project Areas</b><span>Committees: every MIDA project area, with sources</span></a><a href="https://weber-county-hive.github.io/Taxation/utah-grand-hyatt-mida-case.html"><b>The Grand Hyatt and MIDA</b><span>Taxation: the hotel that pays no property tax</span></a><a href="https://weber-county-hive.github.io/Unelected-Power/dan-hemmert.html"><b>Dan Hemmert</b><span>Unelected Power: MIDA’s executive director</span></a><a href="https://weber-county-hive.github.io/Bill-Tracker/weber-hive-sb233.html"><b>S.B. 233 (2021)</b><span>Bill Tracker: districts get taxing power</span></a><a href="https://weber-county-hive.github.io/PIDS-Utah/stratos-ruby-pipeline-mida.html"><b>Stratos and the Ruby Pipeline</b><span>PIDs Utah</span></a></div>
+</section>
+<section><h2 class="sec">Behind this piece</h2>
+<div class="hs-counter"><div><div class="n">3</div><div class="l">Hive case files drawn on</div></div><div><div class="n">2</div><div class="l">State records read</div></div><div><div class="n">13</div><div class="l">Dated timeline entries</div></div></div>
+</section>
+<section id="updates"><h2 class="sec">Updates</h2>
+<ul class="tl"><li><b>Oct. 18, 2026</b>Page posted. Built from the Hive’s existing MIDA case files; see those pages for document-level sources.</li></ul>
+<div class="ask" style="margin-top:14px"><strong>Know something we should add?</strong> Email <a href="mailto:webercountyhive@gmail.com?subject=Then%20and%20Now">webercountyhive@gmail.com</a>. Corrections are dated and shown here.</div>
+</section>
+<section id="sources"><details class="src"><summary>Sources</summary><ol><li><a href="https://transparent.utah.gov/mida/">Transparent Utah, MIDA page (history, board, audit note)</a></li><li><a href="https://www.utah.gov/pmn/files/1453631.pdf">MIDA budget filing, fiscal year ended June 30, 2026 (utah.gov Public Notice)</a></li><li><a href="https://weber-county-hive.github.io/committees/weberhivecommitteemidaprojectareas.html">The Weber County Hive, “Eight Project Areas,” with its 37 sources (bills, project area plans, resolutions, news reports)</a></li><li><a href="https://weber-county-hive.github.io/Taxation/utah-grand-hyatt-mida-case.html">The Weber County Hive, Grand Hyatt and MIDA case file, with its sources (S.B. 269, MIDA resolutions, Park Record, KPCW, Wasatch County tax records)</a></li><li>The Salt Lake Tribune, June 26, 2026, on Dan Hemmert’s hiring, as cited in the Hive’s Dan Hemmert profile</li></ol><p class="note">Public records and published reports only. Where sources disagree, this page says so.</p></details></section>
+</div></main>
+<footer class="site"><div class="wrap">Then and Now · Utah Hive Politics · from the publisher of The Weber County Hive. Public records and published reports only. Every fact links to its source. Have family stories, photos or records about a place in these pages? Email <a href="mailto:webercountyhive@gmail.com">webercountyhive@gmail.com</a>.<br><a href="https://github.com/Weber-County-Hive">All Hive repos</a> · <a href="https://webercountyhive.substack.com">webercountyhive.substack.com</a></div></footer>
+<div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent · Accountability · Journalism</span></div>
+<script data-goatcounter="https://weberhive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>document.querySelectorAll('.hs-flip').forEach(f=>f.addEventListener('click',()=>f.setAttribute('aria-expanded',f.getAttribute('aria-expanded')==='true'?'false':'true')));</script>
+</body>
+</html>
